@@ -12,3 +12,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 14px;
+}
+
+.textLg {
+  font-size: 16px;
+}
+
+.pinkText {
+  color: var(--text-pink);
+}
+
+button {
+  height: 50px;
+  background-color: var(--button-bg-pink);
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  width: 250px;
+}
+
+* {
+  box-sizing: border-box;
+}

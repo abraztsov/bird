@@ -1,0 +1,59 @@
+.root {
+  padding: 30px;
+  border: solid 1px #e6e6e6;
+}
+.root hr {
+  border: none;
+  color: #e6e6e6;
+  background-color: #e6e6e6;
+  height: 1px;
+}
+.productImgWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.productImgWrapper img {
+  width: 71px;
+  object-fit: contain;
+}
+.item {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+.itemsWrapper .item:first-child {
+  margin-top: 20px;
+}
+.itemsWrapper .item:last-child {
+  margin-bottom: 20px;
+}
+.couponCode {
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+.couponCode span {
+  border-bottom: 1px dashed #979797;
+  cursor: pointer;
+}
+.credit {
+  display: flex;
+}
+.credit label {
+  margin-left: 12px;
+}
+@media (max-width: 991px) {
+  .root {
+    padding: 0 15px;
+    border: none;
+  }
+  .productImgWrapper {
+    margin-top: 50px;
+    margin-bottom: 45px;
+  }
+  .productImgWrapper img {
+    width: 40px;
+  }
+}

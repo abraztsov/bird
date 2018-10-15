@@ -1,0 +1,36 @@
+.btnsGroup {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+.btnBack {
+  font-size: 18px;
+  opacity: 0.4;
+  cursor: pointer;
+  margin-right: 40px;
+}
+@media (max-width: 991px) {
+  .GenderForm {
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .ShippingAddressForm {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .btnsGroup {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .btnBack {
+    display: none;
+  }
+  .btnsGroup button[type="submit"] {
+    width: 100%;
+  }
+  .btnsGroup span {
+    display: none;
+  }
+}

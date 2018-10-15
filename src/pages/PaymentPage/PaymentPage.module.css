@@ -1,0 +1,87 @@
+.root {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.Info img {
+  max-width: 368px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 23px;
+}
+
+.checkoutAndInfoBlock {
+  max-width: 400px;
+  margin-right: 70px;
+  width: 100%;
+}
+.formBlock {
+  max-width: 700px;
+  width: 100%;
+}
+.CheckoutSummary {
+  margin-bottom: 25px;
+}
+.header h1 {
+  font-size: 36px;
+}
+.Info.visibleOnSmScreen img {
+  margin: 0;
+}
+.Info.visibleOnSmScreen p {
+  margin: 30px 0 20px;
+}
+@media (min-width: 992px) {
+  .visibleOnSmScreen {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .visibleOnLgScreen {
+    display: none;
+  }
+  .visibleOnSmScreen {
+    display: block;
+  }
+  .Info.visibleOnSmScreen {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    align-items: center;
+  }
+  .root {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Info {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .checkoutAndInfoBlock {
+    margin-right: 0;
+  }
+  .header.visibleOnSmScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .header h1 {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .CheckoutSummary {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 767px) {
+  .root {
+    padding: 20px 0;
+  }
+}

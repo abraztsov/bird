@@ -1,0 +1,51 @@
+.root {
+  position: relative;
+  width: 100%;
+}
+.root input {
+  width: 100%;
+  padding: 14px 15px;
+  padding-right: 35px;
+  font-size: 18px;
+  height: 50px;
+  border: solid 1px #e6e6e6;
+  outline: 0;
+}
+.root input:active,
+input:focus {
+  border-color: rgba(255, 69, 143, 0.6);
+}
+.label {
+  display: none;
+  position: absolute;
+  padding: 0 5px;
+  background: #fff;
+  top: -8px;
+  left: 9px;
+  font-size: 14px;
+  color: var(--text-darkGray);
+}
+.root input:active ~ .label,
+input:focus ~ .label {
+  display: block;
+}
+.error input {
+  border-color: var(--border-red);
+  border-width: 2px;
+  background-color: #fafafa;
+}
+.errorMessage {
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  font-size: 12px;
+  white-space: nowrap;
+  color: var(--text-red);
+}
+
+.filledMark {
+  color: #ff458f;
+  position: absolute;
+  right: 15px;
+  top: 17px;
+}

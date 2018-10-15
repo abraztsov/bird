@@ -1,0 +1,58 @@
+.cvvWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.question {
+  padding-left: 10px;
+}
+.formWrapper {
+  border: solid 1px var(--border-lightGray);
+  background-color: #fafafa;
+  padding: 30px;
+}
+
+.secureWrapper {
+  display: flex;
+  align-items: center;
+}
+.secureWrapper span {
+  color: var(--text-green);
+  opacity: 0.6;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.secureWrapper img {
+  width: 29px;
+  height: 100%;
+}
+.expire {
+  font-size: 18px;
+  color: var(--text-darkGray);
+}
+
+.ccsWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.ccsWrapper img {
+  width: 144px;
+  height: 100%;
+}
+@media (max-width: 991px) {
+  .ccsWrapper {
+    justify-content: flex-start;
+  }
+  .secureWrapper span {
+    font-size: 12px;
+  }
+  .secureWrapper img {
+    width: 25px;
+  }
+  .formWrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: none;
+    border-right: none;
+  }
+}

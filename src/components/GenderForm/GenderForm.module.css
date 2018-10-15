@@ -1,0 +1,30 @@
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputs label:first-child {
+  padding-right: 60px;
+}
+.inputs label input {
+  display: none;
+}
+.inputs label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputs label img {
+  width: 70px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.inputs label p {
+  font-size: 24px;
+}
+.inputsGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
